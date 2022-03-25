@@ -15,12 +15,16 @@ function updateInput(event) {
       .innerText.replace("$", "")
   );
 
+  console.log(productPrice);
   let updatedSubTotal = productPrice * input.value;
+
+  console.log(updatedSubTotal);
 
   // 抓取該商品的 小計 物件
   let SubTotal = input.parentElement.parentElement.querySelectorAll("td")[3];
+  console.log(SubTotal);
 
-  SubTotal.innerText = `${updatedSubTotal}`;
+  SubTotal.innerText = `$${updatedSubTotal}`;
 
   updateTotalPrice();
 }
