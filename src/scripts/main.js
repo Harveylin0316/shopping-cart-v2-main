@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.css";
-import "@fortawesome/fontawesome-free/css/all.css";
+import "@fortawesome/fontawesome-free/all.css";
 import emptyCart from "./empty-cart";
 import { addToCart, deleteCartItem } from "./add-delete-to-cart";
 import updateInput from "./update-input";
